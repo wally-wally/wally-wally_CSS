@@ -28,7 +28,7 @@
 
 <br>
 
-### (2) `display: flex;` (예제 파일)
+### (2) `display: flex;` <a href="https://github.com/wally-wally/CSS_Study/tree/master/contents/01_display_flex_1/example/01" target="_blank">(예제 파일)</a>
 
 - 기본적으로 `div` 태그와 같은 것들은 `display` 속성이 `block` 이다. 그래서 한 줄에 하나씩만 요소가 배치되는데 example 에서 구현된 예제를 보면서 자세히 살펴보도록 하자.
 - 먼저 CSS 속성을 아무것도 설정하지 않고 단순히 사진과 텍스트를 출력했을 때 화면은 아래와 같다.
@@ -75,7 +75,7 @@
 
 <br>
 
-### (3) `flex-direction` (예제 파일)
+### (3) `flex-direction` <a href="https://github.com/wally-wally/CSS_Study/tree/master/contents/01_display_flex_1/example/01" target="_blank">(예제 파일)</a>
 
 - 레이아웃을 구성하다보면 가로 배치가 아닌 세로 배치를 해야하는 경우가 있다.
 - `display: flex;`를 사용할 때 배치의 방향을 바꿀 수 있는 속성인 `flex-direction`이 있다.
@@ -92,7 +92,7 @@
 
 <br>
 
-### (4) `justify-content` (예제 파일)
+### (4) `justify-content` <a href="https://github.com/wally-wally/CSS_Study/tree/master/contents/01_display_flex_1/example/02" target="_blank">(예제 파일)</a>
 
 - 다시 가로로 배치하는 상황으로 돌아오자.(`flex-direciton: column;` 속성 제거)
 - 기본적으로 `display: flex;` 속성을 지정하면 각 요소 간 공백 없이 한 줄에 여러 개의 요소들이 배치하게 된다.
@@ -141,7 +141,7 @@
 
 <br>
 
-### (5) `align-items` (예제 파일)
+### (5) `align-items` <a href="https://github.com/wally-wally/CSS_Study/tree/master/contents/01_display_flex_1/example/03" target="_blank">(예제 파일)</a>
 
 - `align-items`는 `justify-content`와 반대로 메인축에 수직인 방향을 기준으로 요소들을 배치하는 속성이다.
 
@@ -212,7 +212,7 @@
 
 <br>
 
-## :three: Review (예제 파일)
+## :three: Review <a href="https://github.com/wally-wally/CSS_Study/tree/master/contents/01_display_flex_1/example/04" target="_blank">(예제 파일)</a>
 
 - 이번 시간에는 display 속성이 `flex`일 때 주로 사용되는 CSS 속성들 중 주로 요소들의 배치와 관련된 것들을 알아보았다.
 - `position` 속성을 이용해서 화면의 정가운데에 요소를 배치하는 방법으로 아래와 같은 방법이 예전부터 내려왔다.
