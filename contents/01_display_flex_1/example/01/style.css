@@ -1,0 +1,13 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.fruits {
+  /* 2 - (2) display: flex; */
+  /* display: flex; */
+
+  /* 2 - (3) flex-direction */
+  /* flex-direction: row; */
+  /* flex-direction: column; */
+}

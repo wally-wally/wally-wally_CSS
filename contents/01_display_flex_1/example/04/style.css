@@ -1,0 +1,25 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.wrapper {
+  background-color: lightgoldenrodyellow;
+  height: 100%;
+
+  /* (2) 화면 정가운데에 배치하는 새로운 방법 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.orange {
+  border: 5px solid orange;
+
+  /* (1) 화면 정가운데에 배치하는 기존 방법 */
+  /* position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); */
+}

@@ -1,0 +1,19 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  height: 1000px;
+  background-color: gray;
+}
+
+.fruits {
+  background-color: white;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  /* align-items: flex-start; */
+  /* align-items: flex-end; */
+  /* align-items: center; */
+}
