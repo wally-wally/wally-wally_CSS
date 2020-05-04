@@ -18,6 +18,7 @@
 - `flex` CSS 속성은 한 영역 내에서 요소들을 배치하여 유연하게 차지하고 있는 공간에 맞춰서 레이아웃을 구성하기 위해 사용되는 속성이다.
   - 즉, 자식 요소를 포함하고 있는 부모 요소의 공간에 맞추기 위해 자식 요소들의 크기를 키우거나 줄이는 방법을 설정하는 속성이다.
 
+- 그리고 `flex` 속성을 적용하면 `block` 속성과 달리 해당 영역의 컨텐츠 내용만큼만 너비가 설정된다.
 - 이와 같은 `flex` 속성을 사용하기 위해 해당 부모 요소에 display 속성을 `flex`로 설정해야 한다.
 
 ```css
@@ -28,7 +29,7 @@
 
 <br>
 
-### (2) `display: flex;` <a href="https://github.com/wally-wally/CSS_Study/tree/master/contents/01_display_flex_1/example/01" target="_blank">(예제 파일)</a>
+### (2) `display: flex;` <a href="https://github.com/wally-wally/CSS_Study/tree/master/01_concept/01_display_flex_1/example/01" target="_blank">(예제 파일)</a>
 
 - 기본적으로 `div` 태그와 같은 것들은 `display` 속성이 `block` 이다. 그래서 한 줄에 하나씩만 요소가 배치되는데 example 에서 구현된 예제를 보면서 자세히 살펴보도록 하자.
 - 먼저 CSS 속성을 아무것도 설정하지 않고 단순히 사진과 텍스트를 출력했을 때 화면은 아래와 같다.
@@ -37,6 +38,7 @@
 
 - 사진과 텍스트 모두 한 줄에 하나씩 배치됨을 확인할 수 있다.
 - 이 상태에서 `display: flex;` 속성을 이용해 한 줄에 여러 개의 요소가 배치되도록 레이아웃을 구성해보자.
+- 기타 `flex` 속성을 적용하지 않고 `display: flex;`만 선언하면 기본적으로 가로 방향으로 한 줄에 여러 개의 요소가 배치된다.
 - 우선 각 과일마다 사진과 텍스트를 class명이 `fruit-item`인 `div`태그로 묶어서 총 네 개의 `div`태그를 markup 했다.
 
 ```html
@@ -71,11 +73,10 @@
 <img src="https://user-images.githubusercontent.com/52685250/80933493-ed42a980-8dfe-11ea-8a61-46b17c076d05.JPG" width="700">
 
 - 그러면 위 사진과 같이 한 줄에 여러 개의 과일들이 배치됨을 확인할 수 있다.
-- 기본적으로 `display: flex;` 속성은 특별한 추가 CSS 속성을 지정하지 않는 이상 자식 요소들을 모두 가로로  한 줄에 배치하게 해준다.
 
 <br>
 
-### (3) `flex-direction` <a href="https://github.com/wally-wally/CSS_Study/tree/master/contents/01_display_flex_1/example/01" target="_blank">(예제 파일)</a>
+### (3) `flex-direction` <a href="https://github.com/wally-wally/CSS_Study/tree/master/01_concept/01_display_flex_1/example/01" target="_blank">(예제 파일)</a>
 
 - 레이아웃을 구성하다보면 가로 배치가 아닌 세로 배치를 해야하는 경우가 있다.
 - `display: flex;`를 사용할 때 배치의 방향을 바꿀 수 있는 속성인 `flex-direction`이 있다.
@@ -92,7 +93,29 @@
 
 <br>
 
-### (4) `justify-content` <a href="https://github.com/wally-wally/CSS_Study/tree/master/contents/01_display_flex_1/example/02" target="_blank">(예제 파일)</a>
+### (4) `flex-wrap` <a href="https://github.com/wally-wally/CSS_Study/tree/master/01_concept/01_display_flex_1/example/02" target="_blank">(예제 파일)</a>
+
+- `flex-wrap` 속성은 부모 요소에 여유 공간이 없는 경우 넘쳐흐를지 말지 결정하는 속성이다.
+- 기본값은 `nowrap`으로 넘쳐흐르지 않고 `wrap`으로 값을 설정하면 넘쳐흐르게 된다.
+
+```css
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+```
+
+- `flex-wrap: nowrap;`으로 설정한 경우 너비가 작아져도 다음 줄로 넘쳐 흐르지 않는다.
+
+<img src="https://user-images.githubusercontent.com/52685250/80944879-7f5da880-8e25-11ea-960b-9cd95e9ca6d8.JPG" width="800">
+
+- `flex-wrap: wrap;`으로 설정한 경우 너비가 작아지면 다음 줄로 넘쳐 흐르게 된다.
+
+<img src="https://user-images.githubusercontent.com/52685250/80944883-808ed580-8e25-11ea-91d2-8d25024128cc.JPG" width="800">
+
+<br>
+
+### (5) `justify-content` <a href="https://github.com/wally-wally/CSS_Study/tree/master/01_concept/01_display_flex_1/example/03" target="_blank">(예제 파일)</a>
 
 - 다시 가로로 배치하는 상황으로 돌아오자.(`flex-direciton: column;` 속성 제거)
 - 기본적으로 `display: flex;` 속성을 지정하면 각 요소 간 공백 없이 한 줄에 여러 개의 요소들이 배치하게 된다.
@@ -141,7 +164,7 @@
 
 <br>
 
-### (5) `align-items` <a href="https://github.com/wally-wally/CSS_Study/tree/master/contents/01_display_flex_1/example/03" target="_blank">(예제 파일)</a>
+### (6) `align-items` <a href="https://github.com/wally-wally/CSS_Study/tree/master/01_concept/01_display_flex_1/example/04" target="_blank">(예제 파일)</a>
 
 - `align-items`는 `justify-content`와 반대로 메인축에 수직인 방향을 기준으로 요소들을 배치하는 속성이다.
 
@@ -212,7 +235,7 @@
 
 <br>
 
-## :three: Review <a href="https://github.com/wally-wally/CSS_Study/tree/master/contents/01_display_flex_1/example/04" target="_blank">(예제 파일)</a>
+## :three: Review <a href="https://github.com/wally-wally/CSS_Study/tree/master/01_concept/01_display_flex_1/example/05" target="_blank">(예제 파일)</a>
 
 - 이번 시간에는 display 속성이 `flex`일 때 주로 사용되는 CSS 속성들 중 주로 요소들의 배치와 관련된 것들을 알아보았다.
 - `position` 속성을 이용해서 화면의 정가운데에 요소를 배치하는 방법으로 아래와 같은 방법이 예전부터 내려왔다.

@@ -1,0 +1,15 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.fruits {
+  display: flex;
+  /* flex-wrap: nowrap; */
+  flex-wrap: wrap;
+  background-color: antiquewhite;
+}
+
+img {
+  width: 200px;
+}
