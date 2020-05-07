@@ -41,6 +41,13 @@
 
 <br>
 
+:heavy_check_mark: <b>CSS Clone Coding - `03_clone_coding`</b>
+
+- 특정 홈페이지의 디자인을 클론 코딩하면서 CSS를 학습합니다.
+- `CSS Clone Coding` 컨텐츠는 현재 준비중입니다.
+
+<br>
+
 ## :three: Copyright
 
 - `wally-wally_CSS` 에서 작성한 Markdown, 예제 코드의 저작권은 <a href="https://github.com/wally-wally" target="_blank">`wally-wally`</a>에게 있습니다.
