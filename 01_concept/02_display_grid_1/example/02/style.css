@@ -1,0 +1,16 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, minmax(25%, auto)); */
+  /* grid-template-columns: repeat(auto-fit, minmax(25%, auto)); */
+  background-color: antiquewhite;
+  width: 800px;
+}
+
+img {
+  width: 200px;
+}

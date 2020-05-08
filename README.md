@@ -19,7 +19,7 @@
 | 번호 | 내용                                 | 링크                                                         |
 | ---- | ------------------------------------ | ------------------------------------------------------------ |
 | 01   | `display: flex` (1) - 컨테이너       | <a href="https://github.com/wally-wally/CSS_Study/tree/master/01_concept/01_display_flex_1" target="_blank">:link:</a> |
-| 02   | `display: grid` (1) - 레이아웃 구성  | :link: (준비중)                                              |
+| 02   | `display: grid` (1) - 레이아웃 구성  | <a href="https://github.com/wally-wally/CSS_Study/tree/master/01_concept/02_display_grid_1" target="_blank">:link:</a> |
 | 03   | `display: flex` (2) - 아이템         | :link: (준비중)                                              |
 | 04   | `display: grid` (2) - 반응형 웹 제작 | :link: (준비중)                                              |
 | 05   | media query (1) - 기본 사용법 익히기 | :link: (준비중)                                              |
