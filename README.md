@@ -48,7 +48,14 @@
 
 <br>
 
-## :three: Copyright
+## :three: Contributing
+
+- 컨텐츠를 보시면서 오탈자나 새로운 의견을 주고 싶으시면 `issue`를 통해 의견을 남겨주세요.
+- 여러분의 많은 issue와 star, fork는 고퀄티리의 `wally-wally_CSS`를 제작하는데 큰 힘이 됩니다. 감사합니다.
+
+<br>
+
+## :four: Copyright
 
 - `wally-wally_CSS` 에서 작성한 Markdown, 예제 코드의 저작권은 <a href="https://github.com/wally-wally" target="_blank">`wally-wally`</a>에게 있습니다.
 - Markdown의 내용 또는 코드를 사용하려면 `Copyright ⓒ by wally-wally` 저작권 명시를 해주시기 바랍니다.
