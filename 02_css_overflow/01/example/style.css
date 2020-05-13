@@ -1,0 +1,36 @@
+/* css 초기화 */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.contents {
+  width: 600px;
+  height: 200px;
+  background-color: #888;
+  /* 컨텐츠 내용이 해당 영역의 최대 너비를 초과해도 다음 줄로 넘어가지 않고 한 줄로 작성된다. */
+  white-space: nowrap;
+  /* 넘치는 부분을 숨긴다. */
+  overflow: hidden;
+  /* 숨긴 부분을 처리하는 방식으로 text-overflow를 ellipsis로 설정하면 말줄임표(...)가 맨 끝에 생성된다. */
+  text-overflow: ellipsis;
+}
+
+.contents-2 {
+  background-color: antiquewhite;
+  /* text-align: left; */
+  /* 우선 각 줄의 높이를 설정한다. */
+  line-height: 2;
+  /* x 줄만 표시되게 하고 싶으면 line-height로 설정한 값(y)에 x를 곱해서 height 값을 지정한다. 이때 단위는 [em] */
+  /* height: x * y em; */
+  height: 6em;
+  /* 넘치는 부분을 숨긴다. */
+  overflow: hidden;
+  /* 맨 끝에 숨기는 텍스트의 단위를 단어로 설정한다. */
+  word-wrap: break-word;
+  /* webkit 계열 브라우저에서 마지막 줄 맨 끝에 말줄임표를 표시하려면 아래 세 줄을 추가로 작성해야 한다. */
+  display: -webkit-box;
+  /* 표시 하고자 하는 줄 수를 작성한다. */
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
