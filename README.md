@@ -22,7 +22,7 @@
 | 02   | `display: grid` (1) - 레이아웃 구성  | <a href="https://github.com/wally-wally/CSS_Study/tree/master/01_concept/02_display_grid_1" target="_blank">:link:</a> |
 | 03   | `display: flex` (2) - 아이템         | :link: (준비중)                                              |
 | 04   | `display: grid` (2) - 반응형 웹 제작 | :link: (준비중)                                              |
-| 05   | media query (1) - 기본 사용법 익히기 | :link: (준비중)                                              |
+| 05   | media query (1) - 기본 사용법 익히기 | <a href="https://github.com/wally-wally/CSS_Study/tree/master/01_concept/05_media_query_1" target="_blank">:link:</a> |
 | 06   | media query (2) - 반응형 웹 제작     | :link: (준비중)                                              |
 | 07   | transition                           | :link: (준비중)                                              |
 | 08   | animation                            | :link: (준비중)                                              |

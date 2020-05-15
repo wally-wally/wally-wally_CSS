@@ -1,0 +1,23 @@
+h1 {
+  color: crimson;
+}
+
+@media (orientation: landscape) {
+  .horizontal {
+    display: block;
+  }
+
+  .vertical {
+    display: none;
+  }
+}
+
+@media (orientation: portrait) {
+  .horizontal {
+    display: none;
+  }
+
+  .vertical {
+    display: block;
+  }
+}

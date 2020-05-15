@@ -1,0 +1,36 @@
+h1 {
+  color: crimson;
+}
+
+.desktop {
+  font-size: 24px;
+  color: blue;
+}
+
+.mobile {
+  font-size: 20px;
+  color: green;
+}
+
+/* (2-1) 일정 너비 이하인 경우 */
+@media (max-width: 900px) {
+  .desktop {
+    font-size: 15px;
+    color: black;
+  }
+}
+
+/*
+  (2-2) 너비가 500px 이하이고 높이가 900px 이하인 경우
+        제목('미디어 쿼리 학습')을 가운데 정렬 하고
+        '모바일 사이즈' 텍스트의 굵기를 bold로 변경
+*/
+@media (max-width: 500px) and (max-height: 900px) {
+  h1 {
+    text-align: center;
+  }
+  
+  .mobile {
+    font-weight: bold;
+  }
+}
